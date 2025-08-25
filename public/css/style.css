@@ -1,0 +1,316 @@
+:root {
+  --primary-green: #0E4E48;
+  --primary-orange: #FC4F00;
+  --primary-yellow: #FFFF7F;
+  --dark-gray: #222222;
+  --light-gray: #919191;
+}
+
+/* Fontes */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-gray);
+  padding-top: 76px; /* Compensar a navbar fixa */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar-brand .viktra-logo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--primary-green);
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: var(--dark-gray);
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-orange);
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-section .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-orange);
+  border-color: var(--primary-orange);
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: #e44600;
+  border-color: #e44600;
+}
+
+.process-steps {
+  margin-top: 4rem;
+}
+
+.step-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-card h4 {
+  color: white;
+  margin: 0;
+}
+
+.economy-badge {
+  margin-top: 3rem;
+  display: inline-block;
+  background-color: var(--primary-yellow);
+  color: var(--dark-gray);
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+/* Além da Instalação */
+.after-installation-section {
+  background-color: #f8f9fa;
+}
+
+.after-installation-section h2 {
+  color: var(--primary-green);
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.services-row {
+  margin-top: 3rem;
+}
+
+.service-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h4 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.reports-badge {
+  display: inline-block;
+  background-color: var(--primary-green);
+  color: white;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+/* Visão Além do Óbvio */
+.vision-section {
+  background-color: var(--primary-yellow);
+}
+
+.app-showcase {
+  padding: 2rem;
+}
+
+.phone-mockup {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  margin: 0 auto;
+  border: 16px solid #222;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.app-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Conheça a Viktra */
+.about-section {
+  background-color: white;
+}
+
+.testimonials-section, .team-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.founder-card {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.founder-card .title {
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+
+/* Outros Produtos */
+.products-section {
+  background-color: #f8f9fa;
+}
+
+.product-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h4 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.system-card {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  height: 100%;
+}
+
+.system-card h4 {
+  color: white;
+  margin: 0;
+}
+
+/* Onde Estamos */
+.locations-section {
+  background-color: white;
+}
+
+.stats {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+.locations-list {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.location-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.state {
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+/* Nossos Clientes */
+.clients-section {
+  background-color: #f8f9fa;
+}
+
+.clients-placeholder {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Entre em Contato */
+.contact-section {
+  background-color: white;
+}
+
+.contact-info p, .company-data p {
+  margin-bottom: 0.5rem;
+}
+
+.company-data h4 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  
+  .process-steps .col-6 {
+    margin-bottom: 1rem;
+  }
+  
+  .services-row .col-6 {
+    margin-bottom: 1rem;
+  }
+  
+  .phone-mockup {
+    width: 250px;
+    height: 500px;
+  }
+  
+  .location-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
